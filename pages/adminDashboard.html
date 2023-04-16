@@ -10,11 +10,77 @@
     <title>Bpress</title>
   </head>
   <body>
+    <header>
+      <div class="admin">
+        <div>
+          <a href="adminDashboard.html"
+            ><i class="fa-solid h-icon fa-user"></i>Admin dashboard</a
+          >
+        </div>
+      </div>
+      <nav class="navbar navbar-expand-sm sticky-top navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="home.html">
+            <img
+              src="../images/brand.png"
+              alt=""
+              width="30"
+              height="30"
+              class="d-inline-block align-text-top me-2"
+            />
+            Bpress
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="products.html">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="cart.html"
+                  >Cart<i class="fa-solid h-icon fa-cart-shopping"> </i
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="chatMessage.html"
+                  >message<i class="fa-solid h-icon fa-message"> </i
+                ></a>
+              </li>
+            </ul>
+
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="userDashboard.html"
+                  >John<i class="fa-solid h-icon fa-user"> </i
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="register.html">Register</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="login.html">Login</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
     <main>
       <div class="adminDashboard">
-        <div class="dashboard">
+        <div class="dashboard py-3">
           <h1 class="my-3">Welcome to the Admin Dashboard</h1>
-          <div class="head">
+          <div class="head mt-4">
             <ul>
               <li class="btn"><a href="#dashboard">Dashboard</a></li>
               <li class="btn"><a href="#orders">Orders</a></li>
@@ -26,13 +92,157 @@
             </ul>
           </div>
         </div>
-        <section id="content" class="p-3">
-          <h2>Dashboard</h2>
-          <!-- Profile details and form for updating information -->
-          <!-- Add your HTML code for profile section here -->
-        </section>
+        <div class="content p-3">
+          <h2 class="my-4">Dashboard</h2>
+          <div class="major">
+            <div class="box p-3">
+              <div class="icon">
+                <i class="fa-solid fa-globe"></i>
+                <h6 class="ms-2">All Category</h6>
+              </div>
+              <p class="mt-4">10</p>
+            </div>
+            <div class="box p-3">
+              <div class="icon">
+                <i class="fa-solid fa-bandage"></i>
+                <h6 class="ms-2">All Brand</h6>
+              </div>
+              <p class="mt-4">107</p>
+            </div>
+            <div class="box p-3">
+              <div class="icon">
+                <i class="fa-solid fa-users"></i>
+                <h6 class="ms-2">All Users</h6>
+              </div>
+              <p class="mt-4">5510</p>
+            </div>
+            <div class="box p-3">
+              <div class="icon">
+                <i class="fa-brands fa-first-order"></i>
+                <h6 class="ms-2">All Orders</h6>
+              </div>
+              <p class="mt-4">577</p>
+            </div>
+          </div>
+          <div class="table my-5">
+            <table class="table table-dark table-striped">
+              <thead>
+                <tr>
+                  <th scope="col">Order NO.</th>
+                  <th scope="col">Product Name</th>
+                  <th scope="col">Qauntity</th>
+                  <th scope="col">Date</th>
+                  <th scope="col">Paid Status</th>
+                  <th scope="col">Order Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <th scope="row">Addidas Shoe</th>
+                  <td>12</td>
+                  <td>15-04-2023</td>
+                  <td>Paid</td>
+                  <td>Complete</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <th scope="row">Nike Snikers</th>
+                  <td>24</td>
+                  <td>15-04-2023</td>
+                  <td>Unpaid</td>
+                  <td>Rejected</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <th scope="row">Samsung TV</th>
+                  <td>4</td>
+                  <td>15-04-2023</td>
+                  <td>Paid</td>
+                  <td>Complete</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <th scope="row">Iphone 12</th>
+                  <td>7</td>
+                  <td>16-04-2023</td>
+                  <td>Paid</td>
+                  <td>Complete</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <th scope="row">T Shirt</th>
+                  <td>17</td>
+                  <td>16-04-2023</td>
+                  <td>Unpaid</td>
+                  <td>Process</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
       </div>
     </main>
+
+    <footer>
+      <div class="footer">
+        <div class="footercontainer">
+          <div class="footerItem mb-2">
+            <div class="fLogo">
+              <img
+                src="../images/brand.png"
+                alt="logo"
+                class=""
+                height="40"
+                width="40"
+              />
+              <h3 class="name ms-2">Bpress</h3>
+            </div>
+            <div class="icon-title my-2">Follow us on</div>
+            <div class="fIcon my-3">
+              <div class="icon"><i class="fa-brands fa-facebook"></i></div>
+              <div class="icon"><i class="fa-brands fa-twitter"></i></div>
+              <div class="icon"><i class="fa-brands fa-youtube"></i></div>
+              <div class="icon"><i class="fa-brands fa-instagram"></i></div>
+            </div>
+            <div class="fLetter">
+              <p class="my-2">Get our deals in your inbox</p>
+              <form action="/newsletter" method="post">
+                <div class="formcontainer">
+                  <input type="email" placeholder="enter email" />
+                  <button type="button" class="btn">send</button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <div class="footerItem">
+            <h3>RESOURCES</h3>
+            <p>Blog</p>
+            <p>Online training</p>
+            <p>Qaulity for government contact</p>
+            <p>National resource Guide</p>
+          </div>
+          <div class="footerItem">
+            <h3>OUR COMAPNY</h3>
+            <p>Contact us</p>
+            <p>Privacy policy</p>
+            <p>User agreement</p>
+            <p>Privacy</p>
+          </div>
+          <div class="footerItem">
+            <h3>SERVICES</h3>
+            <p>Accessibility</p>
+            <p>Disclamers</p>
+            <p>Sitemap</p>
+            <p>Cookies</p>
+          </div>
+        </div>
+        <hr class="rule" />
+
+        <p class="text-center copy">Bpress &copy; 2023, All Right Reserved</p>
+      </div>
+    </footer>
 
     <!-- javascript -->
     <script src="../js/all.min.js"></script>
