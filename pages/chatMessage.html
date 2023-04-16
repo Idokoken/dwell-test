@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="../images/favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../css/fontawesome.min.css" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Bpress</title>
+  </head>
+  <body>
+    <main>
+      <div id="chat-container" class="chatMessage">
+        <header id="chat-header">
+          <h1>Chat Messages</h1>
+        </header>
+
+        <ul id="chat-messages"></ul>
+
+        <form id="chat-form">
+          <input
+            type="text"
+            id="chat-input"
+            placeholder="Type your message..."
+          />
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </main>
+
+    <!-- javascript -->
+    <script src="../js/all.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/index.js"></script>
+    <script>
+      document
+        .getElementById("chat-form")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+          const chatInput = document.getElementById("chat-input");
+          const message = chatInput.value;
+          if (message) {
+            const li = document.createElement("li");
+            li.textContent = message;
+
+            document.getElementById("chat-messages").appendChild(li);
+
+            chatInput.value = "";
+          }
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,122 @@
+
+.register-container{
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;	
+	color:var(--primary-color);
+	background-color: #ecf0f3;
+	place-items: center;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+.register {
+  position: relative;
+  width: 350px;
+  height: 600px;
+  border-radius: 20px;
+  padding: 20px 30px;
+  box-sizing: border-box;
+  background: #ecf0f3;
+  box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
+}
+
+.register-container .brand-logo {
+  height: 70px;
+  width: 70px;
+  margin: auto;
+  border-radius: 50%;
+  box-sizing: border-box;
+  box-shadow: 7px 7px 10px #cbced1, -7px -7px 10px white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.register-container .brand-logo img{
+height: 100%;
+width: 100%;
+}
+
+.register-container .brand-title {
+  margin-top: 7px;
+  font-weight: 900;
+  font-size: 1.8rem;
+  color: var(--primary-color);
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.register-container .inputs {
+  text-align: left;
+  margin-top: 15px;
+}
+
+.register-container label, .register-container input, .register-container button {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.register-container label {
+  margin-bottom: 2px;
+} 
+
+.register-container label:nth-of-type(2) {
+  margin-top: 12px;
+}
+
+.register-container input::placeholder {
+  color: gray;
+}
+
+.register-container input {
+  background: #ecf0f3;
+  padding: 10px;
+  padding-left: 20px;
+  height: 40px;
+  font-size: 14px;
+  border-radius: 50px;
+  box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+  caret-color: red;
+}
+
+.register-container button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin-top: 20px;
+  background: rgb(16, 113, 173);
+  height: 40px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 900;
+  box-shadow: 6px 6px 6px #cbced1, -6px -6px 6px white;
+  transition: 0.5s;
+}
+
+.register-container button:hover {
+  box-shadow: none;
+}
+
+.register-container p a {
+  position: absolute;
+  font-size: 15px;
+  text-decoration: none;
+  color: rgb(16, 113, 173);
+  border-radius: 10px;
+  margin-left: 10px;
+}
+
+.register-container h3 {
+  font-size: 25px
+}
+
+

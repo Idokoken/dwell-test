@@ -1,0 +1,50 @@
+header .admin{
+    display: flex;
+    color: white;
+    justify-content: flex-end;
+    padding-right: 20px;
+    background-image: linear-gradient(to right,  rgba(28, 34, 45, 1),var(--primary-color), rgba(28, 34, 45, 1), rgba(28, 34, 45, 1));
+}
+.h-icon{
+    padding-right: 5px;
+    margin-left: 5px;
+
+}
+.admin div{
+    margin: 5px;
+}
+.admin div a{
+    text-decoration: none;
+    color: inherit;
+    font-size: 10px;
+    font-weight: 500;
+    
+}
+header .admin div a:hover, .nav-link:hover{
+color: rgb(221, 108, 15);
+}
+
+header .bg-light{
+    background-color: white !important;
+    box-shadow: 5px 5px 5px 5px #eee6e6;   
+}
+.nav-link, .navbar-brand{
+  color: var(--primary-color);
+  font-weight: 700;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* .navbar-toggler{
+    color: var(--primary-color) !important;
+} */
+
+/* for medium screen */
+@media only screen and (min-width: 768px) {
+    .admin div{
+        margin: 10px;
+    }
+    .admin div a{
+        font-size: 14px;
+    }
+
+}
