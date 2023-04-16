@@ -1,4 +1,4 @@
-#  Frontend Design of E-Commerce Website
+#  Frontend Design of an E-Commerce Website
 
 ## Description
 
